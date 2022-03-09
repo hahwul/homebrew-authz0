@@ -5,20 +5,20 @@
 class Authz0 < Formula
   desc "Authz0 is an automated authorization test tool. Unauthorized access can be identified based on URLs and Roles & Credentials."
   homepage "https://www.hahwul.com"
-  version "1.1.1"
+  version "1.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hahwul/authz0/releases/download/v1.1.1/authz0_1.1.1_darwin_arm64.tar.gz"
-      sha256 "9cfae7d19cfdbffe3ca4efe1b45a3e6d346ed0a4c2a731ecb37c876c49bbdd5d"
+      url "https://github.com/hahwul/authz0/releases/download/v1.1.2/authz0_1.1.2_darwin_arm64.tar.gz"
+      sha256 "1dd377f1fa2a0883dc9a7590b86a50568653e4ac5b8fab4f7a5eeeab8f81e465"
 
       def install
         bin.install "authz0"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hahwul/authz0/releases/download/v1.1.1/authz0_1.1.1_darwin_amd64.tar.gz"
-      sha256 "b5f7e9705b7b03086e0a792806e29e777d6ebe5812e6b1e9a5999052c7f53575"
+      url "https://github.com/hahwul/authz0/releases/download/v1.1.2/authz0_1.1.2_darwin_amd64.tar.gz"
+      sha256 "f87e51443b0d70ccbbc41064cddfe7ece987f97178f53d3c98c59622eb307dec"
 
       def install
         bin.install "authz0"
@@ -28,24 +28,24 @@ class Authz0 < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/hahwul/authz0/releases/download/v1.1.1/authz0_1.1.1_linux_armv6.tar.gz"
-      sha256 "a45ff29cbe160e869aa937be49077356fa969719d821e3d38fdc45356490c286"
+      url "https://github.com/hahwul/authz0/releases/download/v1.1.2/authz0_1.1.2_linux_armv6.tar.gz"
+      sha256 "87775248cb911955e65a661c55ea76785b5f047e97f603f92a35ab7b2fa41b3e"
 
       def install
         bin.install "authz0"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hahwul/authz0/releases/download/v1.1.1/authz0_1.1.1_linux_arm64.tar.gz"
-      sha256 "b4b23b220641d1ecdb49cc98ece7ad93e310870bb4597517b73c6c21cb38264c"
+      url "https://github.com/hahwul/authz0/releases/download/v1.1.2/authz0_1.1.2_linux_arm64.tar.gz"
+      sha256 "489ff4a7a8e99eaa65e02cfd0713b31dcef64e1cd5962895b022cfc0fd6e9fc6"
 
       def install
         bin.install "authz0"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hahwul/authz0/releases/download/v1.1.1/authz0_1.1.1_linux_amd64.tar.gz"
-      sha256 "cbe99b83989de5089d253e8cb0765c1298c5f84b3a7d0aad437f64d37ec5f236"
+      url "https://github.com/hahwul/authz0/releases/download/v1.1.2/authz0_1.1.2_linux_amd64.tar.gz"
+      sha256 "ee763a064daa922b87e3c8f61f5f7f5d0d5995606760457b9688511b95b3f303"
 
       def install
         bin.install "authz0"
